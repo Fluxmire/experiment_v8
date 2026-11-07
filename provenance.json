@@ -1,0 +1,34 @@
+{
+  "design": "Claude merged v8: v7 + gated lineage refines (3 Sol-high per lineage, pro-child judge-rubric gate), neutral-light rules in the system prompt, measured-max output caps, duel counting a view only when both orders replied",
+  "base": "Olauge-Secret/sedge-wren@fc79ce3ef8ea1c8812d09ba7c07c438b376e1f4c",
+  "ideas_from": [
+    "SmoothTight/newvictor@0f4bc93 (SIDES views)",
+    "phuy29 design (lineages to the end, judge-copy final; ideas only)",
+    "round-3 review https://github.com/Fluxmire/round3-analysis: per-step parent gates (Olauge each_lineage / phuy per_lineage), neutral-light prompt rules, measured-max reservations (lark-ridge), both-orders duel counting (style-preset tree); ideas only, no code copied"
+  ],
+  "judge_prompts_from": "404-Repo/404-gen-subnet judge-service stage-1 prompts",
+  "status": "offline-tested only (32 calls, unique ids, 10/10 rewrite turns with sides, gates and duel exercised); not live-run or judged",
+  "verbatim_from_base": {
+    "instructions.md": "43c69f1ba3dca9d847b826cc799b7f76cac8fe8051449157dc93cd4941a2b52f",
+    "miner/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "miner/images.py": "20a8467592a369a76d6546eae046faef91c901be01b857ced031a55386489a4f",
+    "miner/lumen.py": "0ebd075c496a24a86177f49e694b05651e3c37a67c3098beae8b2d6d8406fea0",
+    "miner/lumen_wrap.py": "e2739cba8637da550430bb48dedcb4e7c7190b12926474975a88dc5d8bdfc2bd",
+    "miner/pipeline.py": "111e232a69f1936cf8ddbbb14f48edb1f6c9e7a2bfeff9d0cbb0a91f7d79b837",
+    "miner/rewrite.py": "3dc8d2a8f1db986d67646d1d38c1673bb12cbf5dfef703e61d0fafc33f59f59f",
+    "miner/run.py": "6ef8e5029eb9755084282af182e92170a119c32518a168d933a8757512a9d609",
+    "miner/turns.py": "25b56b79ac21fc40f13e83bb71739ed6e3903ff0958e0005a8d2b113743eb9e1",
+    "proof-parameters/circuit.bin": "451b8ebe434e1b9cee5982a46f4630d3d3647fe49c11f2ec6d88b8731617f9c7",
+    "proof-parameters/proving.bin": "31bd198d1325f526f5f1add2272bf73ffaff23c9e2d0ac7463c0f5e88c8701e7",
+    "proof-parameters/verifying.bin": "6478059e4ad0d39e8c157c76cea9c6dd777c2ab5143cf8694876094facf39b16",
+    "pyproject.toml": "464b1872a89b65c42783bdd95ee6246a457e4aa977fe9311840d9cad20270c2d",
+    "witness.json": "f5fcc74b76200e45067e05c48838002a3ff23205c34d0f2d9a945a5098114ec8"
+  },
+  "modified_from_base": {
+    "main.py": "df3f54f521299fc490fff6f615e026038159523af16acc50b0476c7076b18a93",
+    "miner/rewrite_prompts.py": "8bf703044568b2895590b0ffc5c89e0f4ec73ff66e8f3637cb046dae9cb5d897"
+  },
+  "added": {
+    "miner/merge.py": "ef796cbc0d7706019275c4ba3b760f7550882b7508bc3023ca028958f57ef295"
+  }
+}
